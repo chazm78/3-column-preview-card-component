@@ -1,0 +1,32 @@
+:root {
+    --ffheader: Big Shoulders Display;
+    --ffbody: Lexend Deca;
+    --fs: 0.938 rem;
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--verylightgray);
+    font-family: var(--ffbody);
+    color: var(--transparentwhite);
+}
+
+h1 h2 {
+    font-family: var(--ffheader);
+    color: var(--verylightgray);
+}
+
+button {
+    background-color: var(--verylightgray);
+    border: none;
+}
