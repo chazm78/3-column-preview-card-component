@@ -10,7 +10,6 @@
 }
 
 * {
-    /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,7 +20,6 @@ body {
     font-family: var(--ffbody);
     color: var(--transparentwhite);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -47,9 +45,10 @@ button {
 }
 
 main {
-    background-color: var(--verylightgray);
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /* custom styles below */
@@ -91,4 +90,26 @@ main {
     background-color: var(--verydarkcyan);
     color: var(--verylightgray);
     border: 2px solid var(--verylightgray);
+}
+
+/* media queries below */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 5%;
+    }
+    p {
+        padding-bottom: 25%;
+    }
+    .sedans {
+        padding: 5%;
+    }
+    .suvs {
+        padding: 5%;
+    }
+    .lux {
+        padding: 5%;
+    }
 }
