@@ -10,23 +10,85 @@
 }
 
 * {
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
     background-color: var(--verylightgray);
     font-family: var(--ffbody);
     color: var(--transparentwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 h2 {
+h1, h2 {
     font-family: var(--ffheader);
     color: var(--verylightgray);
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 button {
     background-color: var(--verylightgray);
     border: none;
+    border-radius: 40px;
+    font-family: var(--ffbody);
+    width: 60%;
+    height: 40px;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: var(--verylightgray);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* custom styles below */
+
+.sedans {
+    background-color: var(--brightorange);
+    padding: 10%;
+}
+.sedans button {
+    color: var(--brightorange);
+}
+.sedans button:hover {
+    background-color: var(--brightorange);
+    color: var(--verylightgray);
+    border: 2px solid var(--verylightgray);
+}
+
+.suvs {
+    background-color: var(--darkcyan);
+    padding: 10%;
+}
+.suvs button {
+    color: var(--darkcyan);
+}
+.suvs button:hover {
+    background-color: var(--darkcyan);
+    color: var(--verylightgray);
+    border: 2px solid var(--verylightgray);
+}
+
+.lux {
+    background-color: var(--verydarkcyan);
+    padding: 10%;
+}
+.lux button {
+    color: var(--verydarkcyan);
+}
+.lux button:hover {
+    background-color: var(--verydarkcyan);
+    color: var(--verylightgray);
+    border: 2px solid var(--verylightgray);
 }
